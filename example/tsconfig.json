@@ -9,7 +9,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
-      "react-native-android-uri-path": ["../src"]
+      "@flyerhq/react-native-android-uri-path": ["../src"]
     },
     "skipLibCheck": true,
     "strict": true,
