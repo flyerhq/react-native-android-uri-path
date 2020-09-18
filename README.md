@@ -20,6 +20,8 @@ import getPath from '@flyerhq/react-native-android-uri-path'
 const path = getPath(uriString)
 ```
 
+Other platforms will return `uriString`, so no need to use `Platform`.
+
 ## License
 
 [MIT](LICENSE)
