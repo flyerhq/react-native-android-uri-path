@@ -18,7 +18,7 @@ class RNAndroidURIPathModule(reactContext: ReactApplicationContext) : ReactConte
     fun getPath(uriString: String): String {
         val uri = Uri.parse(uriString)
         val cursor = reactApplicationContext.contentResolver.query(uri, null, null, null, null)
-        cursor ?: return ""
+        cursor ?: return uriString
 
         val nameIndex = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME)
         cursor.moveToFirst()
@@ -40,6 +40,6 @@ class RNAndroidURIPathModule(reactContext: ReactApplicationContext) : ReactConte
             e.printStackTrace()
         }
 
-        return ""
+        return uriString
     }
 }
