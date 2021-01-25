@@ -29,11 +29,15 @@ class RNAndroidURIPathModule(reactContext: ReactApplicationContext) : ReactConte
             val file = File.createTempFile("temp", name, reactApplicationContext.cacheDir)
             file.deleteOnExit()
             val stream = reactApplicationContext.contentResolver.openInputStream(uri)
-            val source = Okio.buffer(Okio.source(stream))
-            val sink = Okio.buffer(Okio.sink(file))
-            sink.writeAll(source)
-            sink.close()
-            return file.absolutePath
+            return if (stream != null) {
+                val source = Okio.buffer(Okio.source(stream))
+                val sink = Okio.buffer(Okio.sink(file))
+                sink.writeAll(source)
+                sink.close()
+                file.absolutePath
+            } else {
+                uriString
+            }
         } catch (e: FileNotFoundException) {
             e.printStackTrace()
         } catch (e: IOException) {
