@@ -10,7 +10,7 @@ import java.io.File
 import java.io.FileNotFoundException
 import java.io.IOException
 
-class RNAndroidURIPathModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+class RNAndroidURIPath(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
     override fun getName() = "RNAndroidURIPath"
 
