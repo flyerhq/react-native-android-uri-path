@@ -12,7 +12,7 @@ import java.io.IOException
 
 class RNAndroidURIPathModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
-    override fun getName() = "RNAndroidURIPath"
+    override fun getName() = "RNAndroidURIPathModule"
 
     @ReactMethod(isBlockingSynchronousMethod = true)
     fun getPath(uriString: String): String {
