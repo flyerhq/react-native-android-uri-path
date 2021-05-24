@@ -8,6 +8,7 @@
     "module": "CommonJS",
     "noEmitOnError": true,
     "outDir": "./lib",
+    "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
     "target": "ESNext"

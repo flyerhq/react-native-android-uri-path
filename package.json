@@ -1,6 +1,6 @@
 {
   "name": "@flyerhq/react-native-android-uri-path",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Get an absolute path to a file retrieved by Android's Intent.ACTION_GET_CONTENT that returns a content URI.",
   "homepage": "https://github.com/flyerhq/react-native-android-uri-path#readme",
   "main": "lib/index.js",
@@ -38,21 +38,21 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/runtime": "^7.12.5",
+    "@babel/core": "^7.14.3",
+    "@babel/runtime": "^7.14.0",
     "@react-native-community/eslint-config": "^2.0.0",
-    "@types/jest": "^26.0.20",
-    "@types/react-native": "^0.63.46",
-    "@types/react-test-renderer": "^17.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/react-native": "^0.64.5",
+    "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^26.6.3",
-    "eslint": "^7.19.0",
+    "eslint": "^7.27.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^26.6.3",
-    "metro-react-native-babel-preset": "^0.65.0",
-    "react": "^17.0.1",
-    "react-native": "^0.63.4",
-    "react-test-renderer": "^17.0.1",
-    "typescript": "^4.1.3"
+    "metro-react-native-babel-preset": "^0.66.0",
+    "react": "^17.0.2",
+    "react-native": "^0.64.1",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "^4.2.4"
   },
   "peerDependencies": {
     "react": "*",
