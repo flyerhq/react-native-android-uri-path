@@ -6,7 +6,7 @@ import DocumentPicker from 'react-native-document-picker'
 const App = () => {
   const openPicker = async () => {
     try {
-      const response = await DocumentPicker.pick({
+      const response = await DocumentPicker.pickSingle({
         type: [DocumentPicker.types.allFiles],
       })
       Alert.alert('Path', getPath(response.uri), [{ text: 'OK' }], {

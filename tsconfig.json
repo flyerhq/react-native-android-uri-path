@@ -3,15 +3,16 @@
     "declaration": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "jsx": "react-native",
+    "jsx": "react",
     "lib": ["ESNext"],
-    "module": "CommonJS",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "noEmitOnError": true,
     "outDir": "./lib",
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ES2018"
   },
   "exclude": ["**/__tests__/*"],
   "include": ["src"]
