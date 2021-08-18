@@ -5,7 +5,7 @@ import android.provider.OpenableColumns
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
-import okio.Okio
+import okio.*
 import java.io.File
 import java.io.FileNotFoundException
 import java.io.IOException
@@ -30,8 +30,8 @@ class RNAndroidURIPathModule(reactContext: ReactApplicationContext) : ReactConte
             file.deleteOnExit()
             val stream = reactApplicationContext.contentResolver.openInputStream(uri)
             return if (stream != null) {
-                val source = Okio.buffer(Okio.source(stream))
-                val sink = Okio.buffer(Okio.sink(file))
+                val source = stream.source().buffer()
+                val sink = file.sink().buffer()
                 sink.writeAll(source)
                 sink.close()
                 file.absolutePath
