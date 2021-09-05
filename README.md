@@ -12,6 +12,8 @@ Get an absolute path to a file retrieved by Android's `Intent.ACTION_GET_CONTENT
 yarn add @flyerhq/react-native-android-uri-path
 ```
 
+⚠️ Use version `2.1.3` for React Native below `0.65.0` and latest for `0.65.0` and above
+
 ## Usage
 
 ```ts

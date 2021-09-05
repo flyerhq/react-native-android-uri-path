@@ -12,11 +12,7 @@ const App = () => {
       Alert.alert('Path', getPath(response.uri), [{ text: 'OK' }], {
         cancelable: true,
       })
-    } catch (err) {
-      if (!DocumentPicker.isCancel(err)) {
-        // Handle error
-      }
-    }
+    } catch {}
   }
 
   return (
