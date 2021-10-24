@@ -10,7 +10,7 @@ buildscript {
 
   dependencies {
     classpath 'com.android.tools.build:gradle:4.2.2'
-    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${safeExtGet('kotlinVersion', '1.5.30')}"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${safeExtGet('kotlinVersion', '1.5.31')}"
   }
 }
 
@@ -26,7 +26,7 @@ android {
   buildToolsVersion safeExtGet('buildToolsVersion', '30.0.2')
 
   defaultConfig {
-    minSdkVersion safeExtGet('minSdkVersion', 16)
+    minSdkVersion safeExtGet('minSdkVersion', 21)
     targetSdkVersion safeExtGet('targetSdkVersion', 30)
   }
 }
