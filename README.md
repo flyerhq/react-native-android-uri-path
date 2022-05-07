@@ -1,5 +1,9 @@
 # React Native Android URI Path
 
+⚠️⚠️⚠️ https://github.com/rnmods/react-native-document-picker/issues/70#issuecomment-846883668 also mentioned in the README of the document picker repo as well, is the correct way to retrieve the path. This repo will be archived. ⚠️⚠️⚠️
+
+<br />
+
 [![npm](https://img.shields.io/npm/v/@flyerhq/react-native-android-uri-path)](https://www.npmjs.com/package/@flyerhq/react-native-android-uri-path)
 [![build](https://github.com/flyerhq/react-native-android-uri-path/workflows/build/badge.svg)](https://github.com/flyerhq/react-native-android-uri-path/actions?query=workflow%3Abuild)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b439310da19b3d6b3917/maintainability)](https://codeclimate.com/github/flyerhq/react-native-android-uri-path/maintainability)
